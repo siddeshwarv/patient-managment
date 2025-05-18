@@ -1,16 +1,15 @@
 package com.pm.patient_service.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
-import org.hibernate.validator.constraints.UUID;
+import lombok.Data;
 
-import javax.annotation.processing.Generated;
 import java.time.LocalDate;
+import java.util.UUID;
 
+@Entity
+@Data
 public class Patient {
 
     @Id
@@ -33,4 +32,6 @@ public class Patient {
 
     @NotNull
     private LocalDate registeredDate;
+
+
 }
