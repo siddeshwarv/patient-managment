@@ -1,1 +1,1 @@
-# patient-managment
+# patient-managmen
